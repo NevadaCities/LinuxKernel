@@ -13,8 +13,7 @@ cd linux-6.0-rc3
 cp ../config .config
 scripts/config --disable DEBUG_INFO
 
-CPU_CORES=$(($(grep -c processor < /proc/cpuinfo)*2))
-make-kpkg --initrd -j"CPU_CORES" linux-image linux-headers linux-modules
+make-kpkg --initrd linux-image linux-headers linux-modules
 
 cd ..
 mkdir "artifact"
