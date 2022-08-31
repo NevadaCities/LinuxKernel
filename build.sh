@@ -13,7 +13,7 @@ cd linux-6.0-rc3
 cp ../config .config
 scripts/config --disable DEBUG_INFO
 
-make-kpkg --initrd linux-image linux-headers linux-modules
+make-kpkg --initrd --target linux-image linux-headers
 
 cd ..
 mkdir "artifact"
