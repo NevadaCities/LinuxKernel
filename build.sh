@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-sudo apt update && sudo apt dist-upgrade -y > /dev/null 2>&1
-sudo apt install -y wget build-essential flex bison libssl-dev libelf-dev > /dev/null 2>&1
+sudo apt update && sudo apt dist-upgrade -y
+sudo apt install -y wget build-essential flex bison libssl-dev libelf-dev kernel-package
 
 cd "${GITHUB_WORKSPACE}"
 
