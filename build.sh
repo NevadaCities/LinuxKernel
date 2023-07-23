@@ -12,7 +12,7 @@ cd linux-6.0-rc3
 cp ../config .config
 scripts/config --disable DEBUG_INFO
 
-sudo make deb-pkg -j'nproc'
+sudo make deb-pkg
 
 cd ..
 mkdir "artifact"
