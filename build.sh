@@ -15,9 +15,9 @@ cd linux-6.7.2
 # Copy the kernel configuration to the kernel source folder and optimize the kernel configuration
 cp ../config .config
 make olddefconfig
-./scripts/config --disable SYSTEM_TRUSTED_KEYS
-./scripts/config --disable DEBUG_INFO
-./scripts/config --disable SYSTEM_REVOCATION_KEYS
+scripts/config --disable SYSTEM_TRUSTED_KEYS
+scripts/config --disable DEBUG_INFO
+scripts/config --disable SYSTEM_REVOCATION_KEYS
 
 # Start compiling
 sudo make -j`nproc` deb-pkg
